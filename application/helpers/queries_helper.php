@@ -105,6 +105,13 @@ if (!function_exists('getByWhereCount')) {
     }
 }
 
+if (!function_exists('record_count')) {
+    function record_count($table)
+    {
+        $thiz = &get_instance();
+        return $thiz->db->count_all($table);
+    }
+}
 if (!function_exists('addNew')) {
     function addNew($table, $data)
     {

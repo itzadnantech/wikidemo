@@ -23,7 +23,7 @@
   <script src="<?php echo base_url('assets/') ?>vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  
+
 
   <style>
     .swal-overlay {
@@ -40,6 +40,31 @@
     }
   </style>
 
+  <!-- loader css -->
+  <style>
+    .loader {
+      display: none;
+      position: absolute;
+      z-index: 999999;
+      top: 0;
+      left: 0;
+      opacity: 0.85;
+      height: 100%;
+      width: 100%;
+      background: url('<?php echo base_url('assets/loader.gif') ?>') 50% 50% no-repeat;
+    }
+
+
+
+    body.loading .loader {
+      overflow: hidden;
+    }
+
+    body.loading .loader {
+      display: block;
+    }
+  </style>
+
 </head>
 
 <body class="sidebar-fixed">
@@ -49,8 +74,8 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
 
       <div class="text-left navbar-brand-wrapper d-flex align-items-center justify-content-between">
-        <a class="navbar-brand brand-logo" href="<?php echo base_url('dashboard') ?>">Admin</a>
-        <a class="navbar-brand brand-logo-mini" href="<?php echo base_url('dashboard') ?>">EC</a>
+        <a class="navbar-brand brand-logo" href="<?php echo base_url('dashboard') ?>">Wikidemo</a>
+        <a class="navbar-brand brand-logo-mini" href="<?php echo base_url('dashboard') ?>">WK</a>
         <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-menu"></span>
         </button>
@@ -110,8 +135,20 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          
-         
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('post-article') ?>">
+              <i class="mdi mdi-shield-check menu-icon"></i>
+              <span class="menu-title">Post Article</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('articles-list') ?>">
+              <i class="mdi mdi-shield-check menu-icon"></i>
+              <span class="menu-title">Articles List</span>
+            </a>
+          </li>
+
+
 
           <!-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">

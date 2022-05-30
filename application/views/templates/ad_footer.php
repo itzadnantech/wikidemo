@@ -18,6 +18,8 @@
   <script src="<?php echo base_url('assets/') ?>js/custom.js"></script>
   <script src="<?php echo base_url('assets/') ?>vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
   <script src="<?php echo base_url('assets/') ?>js/toastDemo.js"></script>
+  <script src="<?php echo base_url('assets/') ?>js/file-upload.js"></script>
+
   <script>
     ///General Scripts
 
@@ -65,7 +67,23 @@
       });
 
     }
+
+
+
+    $body = $("body");
+    $(document).on({
+      ajaxStart: function() {
+        $body.addClass("loading");
+      },
+      ajaxStop: function() {
+        $body.removeClass("loading");
+      }
+    });
   </script>
+
+  <div class="loader">
+    <!-- Place at bottom of page -->
+  </div>
 
   </body>
 

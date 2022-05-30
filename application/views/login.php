@@ -28,7 +28,7 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <h4 class="text-center">Ecomplicator Management</h4>
+                <h4 class="text-center">Admin Management</h4>
                 <!-- <img src="<?php echo base_url('assets/') ?>images/logo-dark.svg" alt="logo"> -->
               </div>
               <form class="submit-form pt-3" action="<?php echo base_url('login') ?>">
@@ -48,7 +48,7 @@
                       Keep me signed in
                     </label>
                   </div> -->
-                  <a href="javascript:void(0)" class="auth-link text-black" data-toggle="modal" data-target="#forgot-password">Forgot password?</a>
+                  <a href="javascript:void(0)" class="auth-link text-black" data-toggle="modal" data-target="#forgot-password">Reset password?</a>
                 </div>
                 <!-- <div class="mb-2">
                   <button type="button" class="btn btn-block btn-facebook auth-form-btn">
