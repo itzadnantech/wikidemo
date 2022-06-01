@@ -24,6 +24,10 @@ $route['articles-list'] = 'Wikimedia/ArticlesList';
 // $route['delete/(:any)/(:any)/(:num)']='Partial/DeleteRecord';
 
 
+///Api routes
+$route['upload_file'] = 'ApiController/api_file';
+
+
 
 
 
