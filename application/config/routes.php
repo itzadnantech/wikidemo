@@ -26,6 +26,7 @@ $route['articles-list'] = 'Wikimedia/ArticlesList';
 
 ///Api routes
 $route['upload_file'] = 'ApiController/api_file';
+$route['loginRequest'] = 'ApiController/loginRequest';
 
 
 
